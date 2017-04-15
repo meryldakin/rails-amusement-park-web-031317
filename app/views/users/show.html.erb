@@ -1,0 +1,19 @@
+<%= flash[:message] %>
+<br><br>
+
+
+<%= @user.name %>
+Mood: <%= @user.mood %>
+Tickets: <%= @user.tickets %>
+Height: <%= @user.height %>
+<% if @user.admin == true %>
+<%= "ADMIN" %>
+<% end %>
+
+<a data-method="delete" href="/logout" rel="nofollow">Log Out</a>
+<a data-method="get" href="/attractions" rel="nofollow">See attractions</a>
+
+
+<!-- <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'delete'}) do %>
+  <input type=submit value='Log Out'>
+<% end %> -->

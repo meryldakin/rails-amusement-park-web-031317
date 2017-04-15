@@ -33,6 +33,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'rack-flash'
+gem 'rack-flash3'
 
 group :test, :development do
   gem "rspec-rails"

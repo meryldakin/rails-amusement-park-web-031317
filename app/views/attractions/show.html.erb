@@ -1,0 +1,9 @@
+<h1>
+  <%= @attraction.name %>
+
+</h1>
+<% if !is_admin %>
+<%= button_to "Go on this ride", profile_path(@user), :method => "get" %>
+<% else %>
+<%= link_to "Edit Attraction", edit_attraction_path(@attraction) %>
+<% end %>
